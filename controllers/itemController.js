@@ -1,21 +1,32 @@
-
 exports.homepage = (req, res) => {
-    res.render('index'); // Renders the index.ejs view
+    res.render('index'); 
 };
 
 exports.about = (req, res) => {
-    res.render('about'); // Renders the about.ejs view
+    res.render('about'); 
 };
 
 exports.contact = (req, res) => {
-    res.render('contact'); // Renders the contact.ejs view
+    res.render('contact'); 
 };
 
-exports.gallery = (req, res) => {
-    res.render('gallery'); // Renders the gallery.ejs view
+exports.services = (req, res) => {
+    res.render('services'); 
+};
+
+exports.faq = (req, res) => {
+    res.render('faq'); 
+};
+
+exports.testimonials = (req, res) => {
+    res.render('testimonials'); 
+};
+
+exports.portfolio = (req, res) => {
+    res.render('portfolio');
 };
 
 exports.profile = (req, res) => {
     const username = req.params.username;
-    res.render('profile', { username }); // Renders the profile.ejs view with username
+    res.render('profile', { username }); 
 };
